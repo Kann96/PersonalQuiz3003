@@ -125,6 +125,9 @@ private extension QuestionViewController {
         for (label, answer) in zip(multipleLabels, answers) {
             label.text = answer.title
         }
+        for multipleSwitch in multipleSwitches {
+            multipleSwitch.isOn = false
+        }
     }
     
     func showRangedStackView(with answers: [Answer]) {
