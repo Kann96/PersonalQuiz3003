@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		514669E62A0D4587004F0085 /* PersonalQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		514669E62A0D4587004F0085 /* PersonalQuiz3003.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalQuiz3003.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514669E92A0D4587004F0085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		514669EB2A0D4587004F0085 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		514669ED2A0D4587004F0085 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		514669E72A0D4587004F0085 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				514669E62A0D4587004F0085 /* PersonalQuiz.app */,
+				514669E62A0D4587004F0085 /* PersonalQuiz3003.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,9 +116,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		514669E52A0D4587004F0085 /* PersonalQuiz */ = {
+		514669E52A0D4587004F0085 /* PersonalQuiz3003 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 514669FA2A0D4588004F0085 /* Build configuration list for PBXNativeTarget "PersonalQuiz" */;
+			buildConfigurationList = 514669FA2A0D4588004F0085 /* Build configuration list for PBXNativeTarget "PersonalQuiz3003" */;
 			buildPhases = (
 				514669E22A0D4587004F0085 /* Sources */,
 				514669E32A0D4587004F0085 /* Frameworks */,
@@ -128,9 +128,9 @@
 			);
 			dependencies = (
 			);
-			name = PersonalQuiz;
+			name = PersonalQuiz3003;
 			productName = PersonalQuiz;
-			productReference = 514669E62A0D4587004F0085 /* PersonalQuiz.app */;
+			productReference = 514669E62A0D4587004F0085 /* PersonalQuiz3003.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,14 +141,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					514669E52A0D4587004F0085 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = 514669E12A0D4587004F0085 /* Build configuration list for PBXProject "PersonalQuiz" */;
+			buildConfigurationList = 514669E12A0D4587004F0085 /* Build configuration list for PBXProject "PersonalQuiz3003" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -161,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				514669E52A0D4587004F0085 /* PersonalQuiz */,
+				514669E52A0D4587004F0085 /* PersonalQuiz3003 */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +250,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -310,6 +311,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -393,7 +395,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		514669E12A0D4587004F0085 /* Build configuration list for PBXProject "PersonalQuiz" */ = {
+		514669E12A0D4587004F0085 /* Build configuration list for PBXProject "PersonalQuiz3003" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				514669F82A0D4588004F0085 /* Debug */,
@@ -402,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		514669FA2A0D4588004F0085 /* Build configuration list for PBXNativeTarget "PersonalQuiz" */ = {
+		514669FA2A0D4588004F0085 /* Build configuration list for PBXNativeTarget "PersonalQuiz3003" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				514669FB2A0D4588004F0085 /* Debug */,

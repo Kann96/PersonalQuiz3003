@@ -7,23 +7,40 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
-
+final class ResultViewController: UIViewController {
+    
+    @IBOutlet var zooNameLabel: UILabel!
+    @IBOutlet var resultLabel: UILabel!
+    
+    var resultZoo: [Answer]!
+    var numberOfAnimals = [Animal: Int]()
+    var winningAnimal: Animal?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationItem.setHidesBackButton(true, animated: false)
+        
+        for result in resultZoo {
+            if let currentCount = numberOfAnimals[result.animal] {
+                numberOfAnimals[result.animal] = currentCount + 1
+            } else {
+                numberOfAnimals[result.animal] = 1
+            }
+        }
+        if let maxCount = Array(numberOfAnimals.values).max(),
+        let firstMax = numberOfAnimals.first(where:{ $0.value == maxCount }) {
+            winningAnimal = firstMax.key
+        }
+        zooNameLabel.text = "Вы - \(winningAnimal?.rawValue ?? "🦄")"
+        resultLabel.text = winningAnimal?.definition
+    }
+   
+    
+    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    deinit {
+        print("ResultViewController is deallocated")
     }
-    */
-
 }
